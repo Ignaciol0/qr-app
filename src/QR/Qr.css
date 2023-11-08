@@ -39,6 +39,7 @@ p{
 }
 .subtitle{
     position: relative;
+    top:-20px;
     height: 55px;
     width: 258px;
     font-size: 15px;
