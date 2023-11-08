@@ -3,19 +3,19 @@
 --Light-gray: hsl(212, 45%, 89%);
 --Grayish-blue: hsl(220, 15%, 55%);
 --Dark-blue: hsl(218, 44%, 22%);
+--container-height: 498px;
 }
 body{
     background-color:var(--Grayish-blue);
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    height: 100%;
 }
 div{
-    position: relative;
-    top: 25%;
+    position: absolute;
+    top:calc(50% - var(--container-height)/2);
     background-color: var(--Light-gray);
-    height: 498px;
+    height: var(--container-height);
     width: 320px;
     border-radius: 20px;
     display: flex;
@@ -25,7 +25,7 @@ div{
 }
 div > img {
     height:288px;
-    aspect-ratio: 1;
+    width:288px;
     border-radius: 10px;
 }
 p{
@@ -39,7 +39,6 @@ p{
 }
 .subtitle{
     position: relative;
-    top:-20px;
     height: 55px;
     width: 258px;
     font-size: 15px;
